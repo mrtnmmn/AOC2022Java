@@ -1,34 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e4237fe-5c0a-4470-a19c-7376dc78f6e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AOC2022Java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day01/Day01Input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day01/Day01InputExample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day01/Day01Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day02/Day02Input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day02/Day02InputExample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day02/Day02Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day03/Day03Input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day03/Day03InputExample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day03/Day03Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day03/Day03Stage2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day04/Day04Input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day04/Day04InputExample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day04/Day04Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day05/Day05Input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day05/Day05InputExample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day05/Day05Main.java" afterDir="false" />
+    <list default="true" id="7e4237fe-5c0a-4470-a19c-7376dc78f6e3" name="Changes" comment="changed gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,13 +34,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="Day06Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day06.Day06Main" />
+      <module name="AOC2022Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Day06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Day06Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,6 +74,21 @@
       <option name="presentableId" value="Default" />
       <updated>1670329374890</updated>
     </task>
+    <task id="LOCAL-00001" summary="added days 1 through 5">
+      <created>1670329790875</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670329790875</updated>
+    </task>
+    <task id="LOCAL-00002" summary="changed gitignore">
+      <created>1670329810741</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670329810741</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -75,5 +104,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="added days 1 through 5" />
+    <MESSAGE value="changed gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed gitignore" />
   </component>
 </project>
