@@ -1,5 +1,7 @@
 package Day01;
 
+import Commons.CommonUtils;
+
 import java.io.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -10,19 +12,10 @@ public class Day01Main {
 
     public static void main(String[] args) throws IOException {
 
-        BufferedReader bufferedReader = createBufferedReader("src/Day01/Day01Input.txt");
+        BufferedReader bufferedReader = CommonUtils.createBufferedReader("src/Day01/Day01Input.txt");
         ArrayList caloriesArrayList = inputToIntegerArrays(bufferedReader);
         finalResultPartOne(caloriesArrayList);
         finalResultPartTwo(caloriesArrayList);
-
-    }
-
-    private static BufferedReader createBufferedReader(String filePath) throws FileNotFoundException {
-
-        File file = new File(filePath);
-        FileReader fileReader = new FileReader(file);
-
-        return new BufferedReader(fileReader);
 
     }
 
@@ -54,58 +47,16 @@ public class Day01Main {
     }
 
     private static void finalResultPartOne(ArrayList<Integer> arrayList) {
-        int biggestCalories = 0;
-        int index = 0;
-        int arraySize = arrayList.size();
 
-        for (int i = 0; i < arrayList.size(); i++ ) {
-            int calories = arrayList.get(i);
-            if (calories > biggestCalories) {
-                biggestCalories = calories;
-                index = i + 1;
-            }
-        }
+        arrayList.sort(Collections.reverseOrder());
 
-        System.out.println("The little cocaine smuggler with most calories is number: " + index + ", with " + biggestCalories + " cal");
+        System.out.println(arrayList.get(0));
     }
 
     private static void finalResultPartTwo(ArrayList<Integer> arrayList) {
-
-        int numberOfElvesToFind = 3;
-        
-        int arraySize = arrayList.size();
-        ArrayList<Integer> topThreeCalories = new ArrayList<Integer>();
-
-        for (int i = 0; i < arraySize; i++ ) {
-            int calories = arrayList.get(i);
-            boolean add = false;
-
-            for(int caloriesInTop: topThreeCalories) {
-                if (calories > caloriesInTop) {
-                    add = true;
-                }
-            }
-
-            if (add && topThreeCalories.size() == 3) {
-                topThreeCalories.add(calories);
-                Collections.sort(topThreeCalories, Collections.reverseOrder());
-                topThreeCalories.remove(topThreeCalories.size() - 1);
-            } else if(topThreeCalories.size() < 3) {
-                topThreeCalories.add(calories);
-            }
-
-        }
-
-        System.out.println(returnStringResult(topThreeCalories));
+        arrayList.sort(Collections.reverseOrder());
+        int result = arrayList.get(0) + arrayList.get(1) + arrayList.get(2);
+        System.out.println(result);
     }
 
-    private static String returnStringResult(ArrayList<Integer> arrayCalorias) {
-        String result = "El resultado final es: 1-> ";
-        result += Integer.toString(arrayCalorias.get(0)) + " 2-> ";
-        result += Integer.toString(arrayCalorias.get(1)) + " 3-> ";
-        result += Integer.toString(arrayCalorias.get(2)) + " COMBINED: "
-                + (Integer.toString(arrayCalorias.get(0) + arrayCalorias.get(1) + arrayCalorias.get(2)));
-
-        return result;
-    }
 }
