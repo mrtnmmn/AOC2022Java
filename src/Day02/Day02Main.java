@@ -1,22 +1,17 @@
 package Day02;
 
-import java.io.*;
+import Commons.CommonUtils;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+
 
 public class Day02Main {
 
     public static void main(String[] args) throws IOException {
 
-        BufferedReader br = createBufferedReader("src/Day02/Day02Input.txt");
+        BufferedReader br = CommonUtils.createBufferedReader("src/Day02/Day02Input.txt");
         System.out.println(processAllLines(br));
-
-    }
-
-    private static BufferedReader createBufferedReader(String filePath) throws FileNotFoundException {
-
-        File file = new File(filePath);
-        FileReader fileReader = new FileReader(file);
-
-        return new BufferedReader(fileReader);
 
     }
 
