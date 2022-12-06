@@ -1,24 +1,19 @@
 package Day03;
 
-import java.io.*;
+
+import Commons.CommonUtils;
+
+import java.io.BufferedReader;
+import java.io.IOException;
 
 public class Day03Main {
 
     public static void main(String[] args) throws IOException {
 
         // BufferedReader br = createBufferedReader("src/Day03/Day03InputExample.txt");
-        BufferedReader br = createBufferedReader("src/Day03/Day03Input.txt");
+        BufferedReader br = CommonUtils.createBufferedReader("src/Day03/Day03Input.txt");
         System.out.println(processInput(br));
 
-
-    }
-
-    private static BufferedReader createBufferedReader(String filePath) throws FileNotFoundException {
-
-        File file = new File(filePath);
-        FileReader fileReader = new FileReader(file);
-
-        return new BufferedReader(fileReader);
 
     }
 
@@ -77,7 +72,7 @@ public class Day03Main {
 
     private static int characterToValue(char character) {
 
-        int charInAscii = (int) character;
+        int charInAscii = character;
 
         if (charInAscii <= 90 && charInAscii >= 65) {
             return charInAscii - 38;
